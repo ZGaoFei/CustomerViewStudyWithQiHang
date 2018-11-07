@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
@@ -81,6 +83,7 @@ public class AnimationActivity extends AppCompatActivity {
 
     private void startTranslate() {
         Animation animation = AnimationUtils.loadAnimation(this, R.anim.translate_animation);
+        animation.setInterpolator(new CustomerInterpolator());
         imageView.startAnimation(animation);
     }
 

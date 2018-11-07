@@ -3,6 +3,7 @@
     android:duration="2000"
     android:fillBefore="true"
     android:fromAlpha="1.0"
+    android:interpolator="@android:anim/overshoot_interpolator"
     android:toAlpha="0.1">
 
 </alpha>
