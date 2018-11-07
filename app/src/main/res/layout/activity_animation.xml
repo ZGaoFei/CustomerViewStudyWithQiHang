@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".one_animator.AnimationActivity">
+
+    <TextView
+        android:id="@+id/tv_alpha"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:background="#cccccc"
+        android:gravity="center"
+        android:text="alpha"
+        android:textColor="#000000"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv_scale" />
+
+    <TextView
+        android:id="@+id/tv_scale"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:background="#cccccc"
+        android:gravity="center"
+        android:text="scale"
+        android:textColor="#000000"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_alpha"
+        app:layout_constraintRight_toLeftOf="@+id/tv_translate" />
+
+    <TextView
+        android:id="@+id/tv_translate"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:background="#cccccc"
+        android:gravity="center"
+        android:text="translate"
+        android:textColor="#000000"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_scale"
+        app:layout_constraintRight_toLeftOf="@+id/tv_rotate" />
+
+    <TextView
+        android:id="@+id/tv_rotate"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:background="#cccccc"
+        android:gravity="center"
+        android:text="rotate"
+        android:textColor="#000000"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_translate"
+        app:layout_constraintRight_toLeftOf="@+id/tv_set" />
+
+    <TextView
+        android:id="@+id/tv_set"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:background="#cccccc"
+        android:gravity="center"
+        android:text="set"
+        android:textColor="#000000"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_rotate"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/iv_animation"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
