@@ -26,5 +26,12 @@ public class AnimatorOneActivity extends AppCompatActivity {
                 AnimationActivity.start(AnimatorOneActivity.this);
             }
         });
+
+        findViewById(R.id.bt_animator).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ValueAnimatorActivity.start(AnimatorOneActivity.this);
+            }
+        });
     }
 }

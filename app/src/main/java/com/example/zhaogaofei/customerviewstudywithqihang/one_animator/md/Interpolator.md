@@ -46,7 +46,7 @@
     代码中通过设置animation.setInterpolator(new AccelerateDecelerateInterpolator());
     来添加插值器
 
-> 自定义interpolator
+> 自定义interpolator 简单了解
 
     通过实现Interpolator，然后实现getInterpolation()方法
 

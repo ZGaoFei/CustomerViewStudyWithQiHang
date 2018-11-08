@@ -28,7 +28,13 @@
             android:id="@+id/bt_animation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="animation"/>
+            android:text="animation" />
+
+        <Button
+            android:id="@+id/bt_animator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="animator" />
 
     </LinearLayout>
 

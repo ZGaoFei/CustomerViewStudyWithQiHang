@@ -71,6 +71,15 @@
         app:layout_constraintLeft_toRightOf="@+id/tv_rotate"
         app:layout_constraintRight_toRightOf="parent" />
 
+    <Switch
+        android:id="@+id/switch_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_alpha"
+        android:textOn="使用代码"
+        android:textOff="使用XML"
+        android:text="是否使用代码方式"/>
+
 
     <ImageView
         android:id="@+id/iv_animation"

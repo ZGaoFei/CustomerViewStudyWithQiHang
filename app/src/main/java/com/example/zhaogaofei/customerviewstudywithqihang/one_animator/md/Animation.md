@@ -1,5 +1,7 @@
 ##### 第一部分动画篇
 
+###### 布局的方式添加动画
+
 animation部分由以下四部分组成
 
     alpha 渐变透明度动画
@@ -11,6 +13,8 @@ animation部分由以下四部分组成
     rotate 旋转动画
 
 存放的位置为res/anim文件夹下，以R.anim.xxx来获取动画
+
+> animation
 
 animation是以上四种类型动画的父类，在以上四种类型的动画中都可以使用，具有的属性：
 
@@ -32,9 +36,9 @@ animation是以上四种类型动画的父类，在以上四种类型的动画�
 
 自身属性：
 
-    android:fromAlpha   动画开始的透明度，从0.0 --1.0 ，0.0表示全透明，1.0表示完全不透明
+    android:fromAlpha   动画开始的透明度，从0.0 - 1.0 ，0.0表示全透明，1.0表示完全不透明
 
-    android:toAlpha     动画结束时的透明度，也是从0.0 --1.0 ，0.0表示全透明，1.0表示完全不透明
+    android:toAlpha     动画结束时的透明度，也是从0.0 - 1.0 ，0.0表示全透明，1.0表示完全不透明
 
 具体看例子：alpha_animation.xml
 
@@ -94,3 +98,117 @@ set 标签的作用就是将各种动画效果组合到一起来展示，所具�
 
     Animation animation = AnimationUtils.loadAnimation(this, R.anim.xxx);
     view.startAnimation(animation);
+
+---
+
+###### 代码的方式添加动画
+
+对应关系为：
+
+    scale —— ScaleAnimation
+
+    alpha —— AlphaAnimation
+
+    rotate —— RotateAnimation
+
+    translate —— TranslateAnimation
+
+    set —— AnimationSet
+
+
+> Animation 类
+
+自身属性对应XML的关系为：
+
+    android:duration          setDuration(long)	 动画持续时间，以毫秒为单位 
+
+    android:fillAfter         setFillAfter(boolean)	如果设置为true，控件动画结束时，将保持动画最后时的状态
+
+    android:fillBefore        setFillBefore(boolean)	如果设置为true,控件动画结束时，还原到开始动画前的状态
+
+    android:fillEnabled       setFillEnabled(boolean)	与android:fillBefore 效果相同，都是在动画结束时，将控件还原到初始化状态
+
+    android:repeatCount       setRepeatCount(int)	重复次数
+
+    android:repeatMode        setRepeatMode(int)	重复类型，有reverse和restart两个值，取值为RESTART或 REVERSE，必须与repeatCount一起使用才能看到效果。因为这里的意义是重复的类型，即回放时的动作。
+
+    android:interpolator      setInterpolator(Interpolator) 设定插值器，其实就是指定的动作效果，比如弹跳效果等
+
+> ScaleAnimation
+
+XML属性同上面scale动画，对应的方法为：
+
+    ScaleAnimation(Context context, AttributeSet attrs)  从XML文件加载动画，基本用不到
+
+    ScaleAnimation(float fromX, float toX, float fromY, float toY)
+
+    ScaleAnimation(float fromX, float toX, float fromY, float toY, float pivotX, float pivotY)
+
+    ScaleAnimation(float fromX, float toX, float fromY, float toY, int pivotXType, float pivotXValue, int pivotYType, float pivotYValue)
+
+最后一个构造函数的pivotXType,它的取值有三个，Animation.ABSOLUTE、Animation.RELATIVE_TO_SELF和Animation.RELATIVE_TO_PARENT；
+
+具体的参数定义可以参考scale中说明，例子：AnimationActivity
+
+> AlphaAnimation
+
+XML属性上对应于alpha，对应的方法为：
+
+    AlphaAnimation(Context context, AttributeSet attrs)  同样，从本地XML加载动画，基本不用
+
+    AlphaAnimation(float fromAlpha, float toAlpha)
+
+这个比较简单，看例子：AnimationActivity
+
+> RotateAnimation
+
+XML属性同上rotate动画，对应的方法为：
+
+    RotateAnimation(Context context, AttributeSet attrs)　　从本地XML文档加载动画，同样，基本不用
+
+    RotateAnimation(float fromDegrees, float toDegrees)
+
+    RotateAnimation(float fromDegrees, float toDegrees, float pivotX, float pivotY)
+
+    RotateAnimation(float fromDegrees, float toDegrees, int pivotXType, float pivotXValue, int pivotYType, float pivotYValue)
+
+这个构造方法的使用与ScaleAnimation差不多，例子：AnimationActivity
+
+> TranslateAnimation
+
+XML属性同上translate，对应的方法为：
+
+    TranslateAnimation(Context context, AttributeSet attrs)  同样，基本不用
+
+    TranslateAnimation(float fromXDelta, float toXDelta, float fromYDelta, float toYDelta)
+
+    TranslateAnimation(int fromXType, float fromXValue, int toXType, float toXValue, int fromYType, float fromYValue, int toYType, float toYValue)
+
+同上，例子：AnimationActivity
+
+> AnimationSet
+
+用于播放动画合集，XML对应于set，对应的方法为：
+
+    AnimationSet(Context context, AttributeSet attrs)  同样，基本不用
+
+    AnimationSet(boolean shareInterpolator)  shareInterpolator取值true或false，取true时，指在AnimationSet中定义一个插值器（interpolater），它下面的所有动画共同。如果设为false，则表示它下面的动画自己定义各自的插值器。
+
+例子：AnimationActivity
+
+> AnimationListener
+
+用于动画的监听功能，可以监听动画的开始、结束、重复状态
+
+    animation.setAnimationListener(new Animation.AnimationListener() {
+                @Override
+                public void onAnimationStart(Animation animation) {
+                }
+                @Override
+                public void onAnimationEnd(Animation animation) {
+                }
+
+                @Override
+                public void onAnimationRepeat(Animation animation) {
+                }
+            });
