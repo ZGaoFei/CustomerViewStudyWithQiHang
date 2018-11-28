@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".one_animator.AnimatorOneActivity" />
         <activity android:name=".one_animator.AnimationActivity" />
-        <activity android:name=".one_animator.ValueAnimatorActivity"></activity>
+        <activity android:name=".one_animator.ValueAnimatorActivity" />
+        <activity android:name=".one_animator.AnimatorTwoActivity"></activity>
     </application>
 
 </manifest>

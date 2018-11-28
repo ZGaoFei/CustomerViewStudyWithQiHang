@@ -36,6 +36,12 @@
             android:layout_height="wrap_content"
             android:text="animator" />
 
+        <Button
+            android:id="@+id/bt_animator_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="animator two" />
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

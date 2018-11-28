@@ -1,6 +1,7 @@
-package com.example.zhaogaofei.customerviewstudywithqihang.one_animator;
+package com.example.zhaogaofei.customerviewstudywithqihang.one_animator.customer;
 
 import android.annotation.SuppressLint;
+import android.util.Log;
 import android.view.animation.Interpolator;
 
 @SuppressLint("NewApi")
@@ -14,6 +15,11 @@ public class CustomerInterpolator implements Interpolator {
 
     @Override
     public float getInterpolation(float input) {
-        return (float) (Math.pow(2, -10 * input) * Math.sin((input - mFactor / 4) * (2 * Math.PI) / mFactor) + 1);
+        Log.e("zgf", "==input==" + input);
+
+        float v = (float) (Math.pow(2, -10 * input) * Math.sin((input - mFactor / 4) * (2 * Math.PI) / mFactor) + 1);
+        // Log.e("zgf", "==v==" + v);
+
+        return v;
     }
 }

@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
@@ -16,11 +15,11 @@ import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
-import android.widget.RadioButton;
 import android.widget.Switch;
 import android.widget.TextView;
 
 import com.example.zhaogaofei.customerviewstudywithqihang.R;
+import com.example.zhaogaofei.customerviewstudywithqihang.one_animator.customer.CustomerInterpolator;
 
 public class AnimationActivity extends AppCompatActivity {
     private TextView tvAlpha;
