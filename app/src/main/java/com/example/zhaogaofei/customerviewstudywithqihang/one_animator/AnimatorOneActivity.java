@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.zhaogaofei.customerviewstudywithqihang.ObjectAnimatorActivity;
 import com.example.zhaogaofei.customerviewstudywithqihang.R;
 
 public class AnimatorOneActivity extends AppCompatActivity {
@@ -38,6 +39,13 @@ public class AnimatorOneActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 AnimatorTwoActivity.start(AnimatorOneActivity.this);
+            }
+        });
+
+        findViewById(R.id.bt_object_animator).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ObjectAnimatorActivity.start(AnimatorOneActivity.this);
             }
         });
     }

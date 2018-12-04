@@ -34,6 +34,8 @@ public class PointView extends View {
     }
 
     private void init() {
+        point = new Point(10);
+
         paint = new Paint();
         paint.setColor(Color.RED);
         paint.setAntiAlias(true);
@@ -78,4 +80,10 @@ public class PointView extends View {
         valueAnimator.start();
     }
     // requestLayout()：会触发onMeasure()和onLayout()方法
+
+    public void setRadius(int radius) {
+        point.setRadius(radius);
+
+        invalidate();
+    }
 }
