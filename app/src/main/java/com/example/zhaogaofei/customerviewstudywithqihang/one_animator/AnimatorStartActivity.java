@@ -6,13 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.zhaogaofei.customerviewstudywithqihang.ObjectAnimatorActivity;
 import com.example.zhaogaofei.customerviewstudywithqihang.R;
 
-public class AnimatorOneActivity extends AppCompatActivity {
+public class AnimatorStartActivity extends AppCompatActivity {
 
     public static void start(Context context) {
-        Intent intent = new Intent(context, AnimatorOneActivity.class);
+        Intent intent = new Intent(context, AnimatorStartActivity.class);
         context.startActivity(intent);
     }
 
@@ -24,28 +23,35 @@ public class AnimatorOneActivity extends AppCompatActivity {
         findViewById(R.id.bt_animation).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AnimationActivity.start(AnimatorOneActivity.this);
+                AnimationActivity.start(AnimatorStartActivity.this);
             }
         });
 
         findViewById(R.id.bt_animator).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ValueAnimatorActivity.start(AnimatorOneActivity.this);
+                ValueAnimatorActivity.start(AnimatorStartActivity.this);
             }
         });
 
         findViewById(R.id.bt_animator_two).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AnimatorTwoActivity.start(AnimatorOneActivity.this);
+                CustomerViewAnimatorActivity.start(AnimatorStartActivity.this);
             }
         });
 
         findViewById(R.id.bt_object_animator).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ObjectAnimatorActivity.start(AnimatorOneActivity.this);
+                ObjectAnimatorActivity.start(AnimatorStartActivity.this);
+            }
+        });
+
+        findViewById(R.id.bt_other).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ValuesHolderAndKeyFrameActivity.start(AnimatorStartActivity.this);
             }
         });
     }

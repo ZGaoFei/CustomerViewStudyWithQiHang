@@ -13,14 +13,14 @@ import com.example.zhaogaofei.customerviewstudywithqihang.R;
 import com.example.zhaogaofei.customerviewstudywithqihang.one_animator.customer.CharEvaluator;
 import com.example.zhaogaofei.customerviewstudywithqihang.one_animator.customer.PointView;
 
-public class AnimatorTwoActivity extends AppCompatActivity {
+public class CustomerViewAnimatorActivity extends AppCompatActivity {
     private TextView tvStart;
     private TextView tvChar;
 
     private PointView pointView;
 
     public static void start(Context context) {
-        Intent intent = new Intent(context, AnimatorTwoActivity.class);
+        Intent intent = new Intent(context, CustomerViewAnimatorActivity.class);
         context.startActivity(intent);
     }
 

@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.zhaogaofei.customerviewstudywithqihang.one_animator.AnimatorOneActivity;
+import com.example.zhaogaofei.customerviewstudywithqihang.one_animator.AnimatorStartActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.bt_one).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AnimatorOneActivity.start(MainActivity.this);
+                AnimatorStartActivity.start(MainActivity.this);
             }
         });
 

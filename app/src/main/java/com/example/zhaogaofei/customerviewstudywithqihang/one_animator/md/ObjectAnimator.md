@@ -39,7 +39,8 @@
     (4)、set函数调用频率是多少：
     由于我们知道动画在进行时，每隔十几毫秒会刷新一次，所以我们的set函数也会每隔十几毫秒会被调用一次。
 
-    set方法具体源码实现的逻辑是在Property类中，具体可以参考Property中的of方法对应的ReflectiveProperty类
+    通过反射的方式获取propertyName对应的setProperty()方法，然后调用target的setProperty()方法，
+    来改变target的属性
 
 
 

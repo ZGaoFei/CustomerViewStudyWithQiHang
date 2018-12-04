@@ -1,4 +1,4 @@
-package com.example.zhaogaofei.customerviewstudywithqihang;
+package com.example.zhaogaofei.customerviewstudywithqihang.one_animator;
 
 import android.animation.ObjectAnimator;
 import android.app.Activity;
@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.zhaogaofei.customerviewstudywithqihang.R;
 import com.example.zhaogaofei.customerviewstudywithqihang.one_animator.customer.PointView;
 
 public class ObjectAnimatorActivity extends Activity {

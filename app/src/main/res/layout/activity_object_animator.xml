@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ObjectAnimatorActivity">
+    tools:context=".one_animator.ObjectAnimatorActivity">
 
     <TextView
         android:id="@+id/tv_start_object_animator"

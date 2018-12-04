@@ -16,11 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".one_animator.AnimatorOneActivity" />
+        <activity android:name=".one_animator.AnimatorStartActivity" />
         <activity android:name=".one_animator.AnimationActivity" />
         <activity android:name=".one_animator.ValueAnimatorActivity" />
-        <activity android:name=".one_animator.AnimatorTwoActivity" />
-        <activity android:name=".ObjectAnimatorActivity"></activity>
+        <activity android:name=".one_animator.CustomerViewAnimatorActivity" />
+        <activity android:name=".one_animator.ObjectAnimatorActivity" />
+        <activity android:name=".one_animator.ValuesHolderAndKeyFrameActivity"></activity>
     </application>
 
 </manifest>
