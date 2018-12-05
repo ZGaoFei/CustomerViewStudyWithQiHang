@@ -21,7 +21,8 @@
         <activity android:name=".one_animator.ValueAnimatorActivity" />
         <activity android:name=".one_animator.CustomerViewAnimatorActivity" />
         <activity android:name=".one_animator.ObjectAnimatorActivity" />
-        <activity android:name=".one_animator.ValuesHolderAndKeyFrameActivity"></activity>
+        <activity android:name=".one_animator.ValuesHolderAndKeyFrameActivity" />
+        <activity android:name=".one_animator.AnimatorSetActivity"></activity>
     </application>
 
 </manifest>

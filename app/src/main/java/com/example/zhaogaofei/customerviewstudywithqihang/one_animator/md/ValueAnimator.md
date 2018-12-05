@@ -93,3 +93,47 @@ android的动画主要分为两类：视图动画（View Animation）和属性�
 
     clone(): 克隆一个一样的Animator对象
 
+
+---
+
+> XML方式添加动画
+
+    属性动画也是可以用XML来添加
+    在res文件夹下添加animator文件，然后添加对应的XML，同animation一致
+    然后使用AnimatorInflater.loadAnimator()来加载动画获取动画对象
+
+    个人感觉使用XML方式来添加属性动画没有代码方式添加的方便
+
+> set集合动画
+
+    set标签对应的实体方法为AnimatorSet，使用方式和Animation一致
+    
+    示例：
+    <set
+      android:ordering=["together" | "sequentially"]>
+
+        <objectAnimator
+            android:propertyName="string"
+            android:duration="int"
+            android:valueFrom="float | int | color"
+            android:valueTo="float | int | color"
+            android:startOffset="int"
+            android:repeatCount="int"
+            android:repeatMode=["repeat" | "reverse"]
+            android:valueType=["intType" | "floatType"]/>
+
+        <animator
+            android:duration="int"
+            android:valueFrom="float | int | color"
+            android:valueTo="float | int | color"
+            android:startOffset="int"
+            android:repeatCount="int"
+            android:repeatMode=["repeat" | "reverse"]
+            android:valueType=["intType" | "floatType"]/>
+
+        <set>
+            ...
+        </set>
+    </set>
+
+

@@ -54,5 +54,12 @@ public class AnimatorStartActivity extends AppCompatActivity {
                 ValuesHolderAndKeyFrameActivity.start(AnimatorStartActivity.this);
             }
         });
+
+        findViewById(R.id.bt_animator_set).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AnimatorSetActivity.start(AnimatorStartActivity.this);
+            }
+        });
     }
 }

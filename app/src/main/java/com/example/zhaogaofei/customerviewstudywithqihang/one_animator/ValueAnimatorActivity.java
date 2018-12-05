@@ -1,7 +1,9 @@
 package com.example.zhaogaofei.customerviewstudywithqihang.one_animator;
 
 import android.animation.Animator;
+import android.animation.AnimatorInflater;
 import android.animation.AnimatorListenerAdapter;
+import android.animation.AnimatorSet;
 import android.animation.IntEvaluator;
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -272,5 +274,11 @@ public class ValueAnimatorActivity extends AppCompatActivity {
         });
         valueAnimator.start();
 
+    }
+
+    // xml动画
+    private void xmlToAnimator() {
+        Animator animator = AnimatorInflater.loadAnimator(this, R.animator.values_animator);
+        animator.start();
     }
 }

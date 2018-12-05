@@ -54,6 +54,12 @@
             android:layout_height="wrap_content"
             android:text="property values holder and key frame" />
 
+        <Button
+            android:id="@+id/bt_animator_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="animator set" />
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
