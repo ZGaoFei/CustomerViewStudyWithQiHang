@@ -2,6 +2,8 @@ package com.example.zhaogaofei.customerviewstudywithqihang.one_animator;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -97,6 +99,8 @@ public class AnimationActivity extends AppCompatActivity {
                 } else {
                     startSetAnimationWithCode();
                 }
+
+                // loadAnimationList();
             }
         });
         switchView.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -214,5 +218,11 @@ public class AnimationActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    private void loadAnimationList() {
+        imageView.setImageResource(R.drawable.animation_list);
+        AnimationDrawable drawable = (AnimationDrawable) imageView.getDrawable();
+        drawable.start();
     }
 }

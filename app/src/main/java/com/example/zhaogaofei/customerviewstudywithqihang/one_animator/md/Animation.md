@@ -1,5 +1,8 @@
 ##### 第一部分动画篇
 
+> Android动画可以分为2类，animation动画和Animator动画，
+animation又可以分为渐变动画和帧动画
+
 ###### 布局的方式添加动画
 
 animation部分由以下四部分组成
@@ -212,3 +215,11 @@ XML属性同上translate，对应的方法为：
                 public void onAnimationRepeat(Animation animation) {
                 }
             });
+
+
+> 帧动画
+
+    帧动画实现：以多张图片的动态切换来实现帧动画
+    在drawable文件夹下创建相关文件
+    对应的XML为animation-list，每一个<item/>标签对应一张图片
+    直接使用imageView.setImageResource(R.drawable.***);
