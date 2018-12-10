@@ -9,20 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".one_animator.AnimatorStartActivity" />
         <activity android:name=".one_animator.AnimationActivity" />
         <activity android:name=".one_animator.ValueAnimatorActivity" />
         <activity android:name=".one_animator.CustomerViewAnimatorActivity" />
         <activity android:name=".one_animator.ObjectAnimatorActivity" />
         <activity android:name=".one_animator.ValuesHolderAndKeyFrameActivity" />
-        <activity android:name=".one_animator.AnimatorSetActivity"></activity>
+        <activity android:name=".one_animator.AnimatorSetActivity" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/AppWelcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

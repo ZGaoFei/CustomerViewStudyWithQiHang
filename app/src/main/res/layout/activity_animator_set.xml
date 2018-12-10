@@ -6,69 +6,100 @@
     android:layout_height="match_parent"
     tools:context=".one_animator.AnimatorSetActivity">
 
-   <ImageView
-       android:id="@+id/iv_add"
-       android:layout_width="50dp"
-       android:layout_height="50dp"
-       app:layout_constraintRight_toRightOf="parent"
-       app:layout_constraintBottom_toBottomOf="parent"
-       android:layout_marginRight="20dp"
-       android:layout_marginBottom="29dp"
-       android:src="@mipmap/add"/>
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="29dp"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <ImageView
         android:id="@+id/iv_share"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginRight="20dp"
         android:layout_marginBottom="29dp"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/share"
         android:visibility="gone"
-        android:src="@mipmap/share"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <ImageView
         android:id="@+id/iv_code"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginRight="20dp"
         android:layout_marginBottom="29dp"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/code"
         android:visibility="gone"
-        android:src="@mipmap/code"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <ImageView
         android:id="@+id/iv_data"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginRight="20dp"
         android:layout_marginBottom="29dp"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/data"
         android:visibility="gone"
-        android:src="@mipmap/data"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <ImageView
         android:id="@+id/iv_my"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginRight="20dp"
         android:layout_marginBottom="29dp"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/my"
         android:visibility="gone"
-        android:src="@mipmap/my"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <ImageView
         android:id="@+id/iv_time"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginRight="20dp"
         android:layout_marginBottom="29dp"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/time"
         android:visibility="gone"
-        android:src="@mipmap/time"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_start_set"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="#cccccc"
+        android:gravity="center"
+        android:text="start"/>
+
+    <ImageView
+        android:id="@+id/iv_set"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/iv_set_copy"
+        android:src="@mipmap/timg"/>
+
+    <ImageView
+        android:id="@+id/iv_set_copy"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toRightOf="@+id/iv_set"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@mipmap/timg"/>
+
 
 </android.support.constraint.ConstraintLayout>

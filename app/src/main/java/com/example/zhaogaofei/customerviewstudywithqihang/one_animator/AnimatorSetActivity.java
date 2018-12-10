@@ -1,5 +1,6 @@
 package com.example.zhaogaofei.customerviewstudywithqihang.one_animator;
 
+import android.animation.Animator;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.content.Context;
@@ -8,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.zhaogaofei.customerviewstudywithqihang.R;
 
@@ -20,6 +22,10 @@ public class AnimatorSetActivity extends AppCompatActivity {
     private ImageView ivTime;
 
     private boolean isShowed;
+
+    private TextView tvStart;
+    private ImageView imageView;
+    private ImageView ivCopy;
 
     public static void start(Context context) {
         Intent intent = new Intent(context, AnimatorSetActivity.class);
@@ -57,6 +63,18 @@ public class AnimatorSetActivity extends AppCompatActivity {
                     doAnimateClose(ivMy, 3, 5, 400);
                     doAnimateClose(ivTime, 4, 5, 400);
                 }
+            }
+        });
+
+        tvStart = findViewById(R.id.tv_start_set);
+        imageView = findViewById(R.id.iv_set);
+        ivCopy = findViewById(R.id.iv_set_copy);
+        tvStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // build();
+
+                delayAnimator3();
             }
         });
     }
@@ -101,4 +119,73 @@ public class AnimatorSetActivity extends AppCompatActivity {
         set.setDuration(1 * 500).start();
     }
 
+    private void build() {
+        AnimatorSet set = new AnimatorSet();
+        set.play(ObjectAnimator.ofFloat(imageView, "translationY", 0, 200))
+                .with(ObjectAnimator.ofFloat(imageView, "translationX", 0, 200))
+                .before(ObjectAnimator.ofFloat(imageView, "translationY", 200, 0))
+                .after(ObjectAnimator.ofFloat(imageView, "translationX", 200, 0));
+        set.setDuration(2000);
+        set.start();
+
+        set.addListener(new Animator.AnimatorListener() {
+            @Override
+            public void onAnimationStart(Animator animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animator animation) {
+
+            }
+
+            @Override
+            public void onAnimationCancel(Animator animation) {
+
+            }
+
+            @Override
+            public void onAnimationRepeat(Animator animation) {
+
+            }
+        });
+    }
+
+    // =======验证set的setStartDelay()方法
+    private void delayAnimator1() {
+        ObjectAnimator objectAnimator1 = ObjectAnimator.ofFloat(imageView, "translationY", 0, 200);
+        objectAnimator1.setStartDelay(2000);
+        ObjectAnimator objectAnimator2 = ObjectAnimator.ofFloat(ivCopy, "translationY", 0, 200);
+
+        AnimatorSet set = new AnimatorSet();
+        set.play(objectAnimator1).with(objectAnimator2);
+        set.setDuration(2000);
+        set.setStartDelay(2000);
+        set.start();
+    }
+
+    private void delayAnimator2() {
+        ObjectAnimator objectAnimator1 = ObjectAnimator.ofFloat(imageView, "translationY", 0, 200);
+        ObjectAnimator objectAnimator2 = ObjectAnimator.ofFloat(ivCopy, "translationY", 0, 200);
+        objectAnimator2.setStartDelay(2000);
+
+        AnimatorSet set = new AnimatorSet();
+        set.play(objectAnimator1).with(objectAnimator2);
+        set.setDuration(2000);
+        set.setStartDelay(2000);
+        set.start();
+    }
+
+    private void delayAnimator3() {
+        ObjectAnimator objectAnimator1 = ObjectAnimator.ofFloat(imageView, "translationY", 0, 200);
+        objectAnimator1.setStartDelay(2000);
+        ObjectAnimator objectAnimator2 = ObjectAnimator.ofFloat(ivCopy, "translationY", 0, 200);
+        objectAnimator2.setStartDelay(2000);
+
+        AnimatorSet set = new AnimatorSet();
+        set.play(objectAnimator1).with(objectAnimator2);
+        set.setDuration(2000);
+        set.setStartDelay(2000);
+        set.start();
+    }
 }
