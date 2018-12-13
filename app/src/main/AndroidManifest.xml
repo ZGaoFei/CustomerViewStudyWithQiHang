@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".one_animator.AnimatorStartActivity" />
         <activity android:name=".one_animator.AnimationActivity" />
         <activity android:name=".one_animator.ValueAnimatorActivity" />
@@ -26,6 +26,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".two_drawing.DrawingStartActivity" />
+        <activity android:name=".two_drawing.PaintAndCanvasActivity"></activity>
     </application>
 
 </manifest>
