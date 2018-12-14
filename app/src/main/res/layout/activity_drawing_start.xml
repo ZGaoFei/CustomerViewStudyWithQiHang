@@ -17,6 +17,12 @@
             android:layout_height="wrap_content"
             android:text="paint and canvas"/>
 
+        <Button
+            android:id="@+id/bt_paint_canvas2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="paint and canvas draw path and text"/>
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

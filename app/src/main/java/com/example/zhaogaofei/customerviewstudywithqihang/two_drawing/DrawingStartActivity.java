@@ -31,5 +31,12 @@ public class DrawingStartActivity extends AppCompatActivity {
                 PaintAndCanvasActivity.start(mActivity);
             }
         });
+
+        findViewById(R.id.bt_paint_canvas2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PaintAndCanvas2Activity.start(mActivity);
+            }
+        });
     }
 }
