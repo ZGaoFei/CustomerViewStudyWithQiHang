@@ -8,6 +8,18 @@
 
 > 对应文件夹：one_animator
 
+[Animation](/app/src/main/java/com/example/zhaogaofei/customerviewstudywithqihang/one_animator/md/Animation.md)
+
+[AnimatorSet](/app/src/main/java/com/example/zhaogaofei/customerviewstudywithqihang/one_animator/md/AnimatorSet.md)
+
+[InterpolatorAndEvaluator](/app/src/main/java/com/example/zhaogaofei/customerviewstudywithqihang/one_animator/md/InterpolatorAndEvaluator.md)
+
+[ObjectAnimator](/app/src/main/java/com/example/zhaogaofei/customerviewstudywithqihang/one_animator/md/ObjectAnimator.md)
+
+[PropertyValuesHolderAndKeyFrame](/app/src/main/java/com/example/zhaogaofei/customerviewstudywithqihang/one_animator/md/PropertyValuesHolderAndKeyFrame.md)
+
+[ValueAnimator](/app/src/main/java/com/example/zhaogaofei/customerviewstudywithqihang/one_animator/md/ValueAnimator.md)
+
 
 ###### 第二部分绘图篇
 
