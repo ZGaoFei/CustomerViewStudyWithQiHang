@@ -33,16 +33,19 @@
     canvas.drawArc(); // 画圆弧
 
 
-> Rect
+> Rect 矩形区域
 
 
 
 
-> RectF
+> RectF 同Rect矩形区域
 
 
 
 
-> Path
+> Path 不规则路径绘制
+
+
+> Region 可以支持区域的合并、交叉等操作
 
 

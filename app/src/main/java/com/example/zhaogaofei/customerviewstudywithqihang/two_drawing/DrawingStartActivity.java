@@ -25,18 +25,10 @@ public class DrawingStartActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        findViewById(R.id.bt_paint_canvas).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                PaintAndCanvasActivity.start(mActivity);
-            }
-        });
+        findViewById(R.id.bt_paint_canvas).setOnClickListener((view) -> PaintAndCanvasActivity.start(mActivity));
 
-        findViewById(R.id.bt_paint_canvas2).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                PaintAndCanvas2Activity.start(mActivity);
-            }
-        });
+        findViewById(R.id.bt_paint_canvas2).setOnClickListener((view) -> PaintAndCanvas2Activity.start(mActivity));
+
+        findViewById(R.id.bt_paint_canvas3).setOnClickListener((view) -> PaintAndCanvas3Activity.start(mActivity));
     }
 }
