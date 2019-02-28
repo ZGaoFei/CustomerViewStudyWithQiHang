@@ -29,7 +29,8 @@
         <activity android:name=".two_drawing.DrawingStartActivity" />
         <activity android:name=".two_drawing.PaintAndCanvasActivity" />
         <activity android:name=".two_drawing.PaintAndCanvas2Activity" />
-        <activity android:name=".two_drawing.PaintAndCanvas3Activity"></activity>
+        <activity android:name=".two_drawing.PaintAndCanvas3Activity" />
+        <activity android:name=".two_drawing.PaintAndCanvas4Activity"></activity>
     </application>
 
 </manifest>

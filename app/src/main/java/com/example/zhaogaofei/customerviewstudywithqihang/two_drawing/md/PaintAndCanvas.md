@@ -48,4 +48,6 @@
 
 > Region 可以支持区域的合并、交叉等操作
 
+[参考](/app/src/main/java/com/example/zhaogaofei/customerviewstudywithqihang/two_drawing/customer/PaintAndCanvas3View)
+
 

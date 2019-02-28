@@ -29,6 +29,12 @@
             android:layout_height="wrap_content"
             android:text="draw region"/>
 
+        <Button
+            android:id="@+id/bt_paint_canvas4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="canvas transformation and operate"/>
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
