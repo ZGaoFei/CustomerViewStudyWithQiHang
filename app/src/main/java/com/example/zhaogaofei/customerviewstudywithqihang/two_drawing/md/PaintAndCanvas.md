@@ -51,3 +51,8 @@
 [参考](/app/src/main/java/com/example/zhaogaofei/customerviewstudywithqihang/two_drawing/customer/PaintAndCanvas3View)
 
 
+> 贝塞尔曲线
+
+[贝塞尔曲线参考](https://blog.csdn.net/harvic880925/article/details/50995587)
+
+

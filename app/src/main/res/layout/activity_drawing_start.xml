@@ -35,6 +35,24 @@
             android:layout_height="wrap_content"
             android:text="canvas transformation and operate"/>
 
+        <Button
+            android:id="@+id/bt_paint_canvas5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="canvas text"/>
+
+        <Button
+            android:id="@+id/bt_paint_canvas6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="bezier"/>
+
+        <Button
+            android:id="@+id/bt_paint_canvas7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="wave"/>
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
