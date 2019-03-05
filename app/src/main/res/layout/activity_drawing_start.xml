@@ -53,6 +53,12 @@
             android:layout_height="wrap_content"
             android:text="wave"/>
 
+        <Button
+            android:id="@+id/bt_paint_canvas8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="canvas other"/>
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

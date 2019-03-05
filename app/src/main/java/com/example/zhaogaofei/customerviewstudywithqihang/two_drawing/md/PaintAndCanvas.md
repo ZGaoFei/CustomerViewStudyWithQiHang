@@ -4,11 +4,23 @@
 
     //普通设置
     paint.setColor();//设置画笔颜色
+    paint.setARGB(int a, int r, int g, int b);//同样是设置颜色，但是利用ARGB分开设置
+    paint.setAlpha(int a); //设置画笔透明度
     paint.setStrokeWidth (5);//设置画笔宽度
     paint.setAntiAlias(true); //指定是否使用抗锯齿功能，如果使用，会使绘图速度变慢
     paint.setStyle(Paint.Style.FILL);//绘图样式，对于设文字和几何图形都有效
+        Paint.Style.FILL :填充内部
+        Paint.Style.FILL_AND_STROKE ：填充内部和描边
+        Paint.Style.STROKE ：仅描边
     paint.setTextAlign(Align.CENTER);//设置文字对齐方式，取值：align.CENTER、align.LEFT或align.RIGHT
     paint.setTextSize(12);//设置文字大小
+    paint.reset();// 重置画笔
+
+    paint.setStrokeCap(Paint.Cap cap);//设置线冒样式，取值有Cap.ROUND(圆形线冒)、Cap.SQUARE(方形线冒)、Paint.Cap.BUTT(无线冒)
+    paint.setStrokeJoin(Paint.Join join);//设置线段连接处样式，取值有：Join.MITER（结合处为锐角）、Join.Round(结合处为圆弧)、Join.BEVEL(结合处为直线)
+    paint.setStrokeMiter(float miter);//设置笔画的倾斜度，90度拿画笔与30拿画笔，画出来的线条样式肯定是不一样的吧
+    paint.setPathEffect(PathEffect effect);
+    设置路径样式;取值类型是所有派生自PathEffect的子类：ComposePathEffect, CornerPathEffect, DashPathEffect, DiscretePathEffect, PathDashPathEffect, SumPathEffect
 
     //样式设置
     paint.setFakeBoldText(true);//设置是否为粗体文字
@@ -19,6 +31,26 @@
     //其它设置
     paint.setTextScaleX(2);//只会将水平方向拉伸，高度不会变
 
+    // 字体设置
+    paint.setTextSize(float textSize);//设置文字大小
+    paint.setFakeBoldText(boolean fakeBoldText);//设置是否为粗体文字
+    paint.setStrikeThruText(boolean strikeThruText);//设置带有删除线效果
+    paint.setUnderlineText(boolean underlineText);//设置下划线
+    paint.setTextAlign(Paint.Align align);//设置开始绘图点位置
+    paint.setTextScaleX(float scaleX);//水平拉伸设置
+    paint.setTextSkewX(float skewX);//设置字体水平倾斜度，普通斜体字是-0.25，可见往右斜
+    paint.setTypeface(Typeface typeface);//字体样式
+
+
+    paint.setShader(Shader shader)
+    paint.setShadowLayer(float radius, float dx, float dy, int shadowColor)
+    paint.setDither(boolean dither)
+    paint.setColorFilter(ColorFilter filter)
+    paint.setXfermode(Xfermode xfermode)
+    paint.setFilterBitmap(boolean filter)
+    paint.clearShadowLayer()
+    paint.breakText(char[] text, int index, int count, float maxWidth, float[] measuredWidth)
+    paint.measureText(String text)
 
 > Canvas
 

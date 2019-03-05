@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 
 import com.example.zhaogaofei.customerviewstudywithqihang.R;
 
@@ -38,5 +37,7 @@ public class DrawingStartActivity extends AppCompatActivity {
         findViewById(R.id.bt_paint_canvas6).setOnClickListener((view) -> PaintAndCanvasBezierActivity.start(mActivity));
 
         findViewById(R.id.bt_paint_canvas7).setOnClickListener((view) -> WaveViewActivity.start(mActivity));
+
+        findViewById(R.id.bt_paint_canvas8).setOnClickListener((view) -> PaintAndCanvasOtherActivity.start(mActivity));
     }
 }
