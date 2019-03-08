@@ -88,3 +88,37 @@
 [贝塞尔曲线参考](https://blog.csdn.net/harvic880925/article/details/50995587)
 
 
+> ColorMatrix
+
+    ColorMatrix()
+    ColorMatrix(float[] src)
+    ColorMatrix(ColorMatrix src)
+    set(ColorMatrix src)
+    set(float[] src)
+    reset()
+
+    setSaturation(float):整体增强颜色饱和度，即同时增强R,G,B的色彩饱和度
+    参考ColorMatrixTestView类
+
+    setScale(float rScale, float gScale, float bScale,float aScale):色彩缩放
+    参考PaintAndCanvasColorMatrix1View.drawBitmap8()
+
+    /**
+     * 将旋转围绕某一个颜色轴旋转
+     * axis=0 围绕红色轴旋转
+     * axis=1 围绕绿色轴旋转
+     * axis=2 围绕蓝色轴旋转
+    */
+    setRotate(int axis, float degrees)
+    参考ColorMatrixTest1View
+
+    // 矩阵相乘
+    setConcat(ColorMatrix matA, ColorMatrix matB)// a * b
+    将结果做为当前ColorMatrics实例的颜色矩阵。所以会把当前ColorMatrics实例以前的颜色矩阵给覆盖掉
+
+    preConcat(ColorMatrix prematrix)//当前矩阵a * prematrix
+    postConcat(ColorMatrix postmatrix)//prematrix * 当前矩阵a
+
+    float[] getArray()// 返回当前ColorMatrix的矩阵数组
+
+

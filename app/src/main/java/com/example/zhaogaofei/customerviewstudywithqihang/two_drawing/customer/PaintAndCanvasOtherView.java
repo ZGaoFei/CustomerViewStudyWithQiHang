@@ -14,6 +14,7 @@ import android.graphics.PathDashPathEffect;
 import android.graphics.SumPathEffect;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 
@@ -48,6 +49,7 @@ public class PaintAndCanvasOtherView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+        Log.e("zgf", "paint and canvas other on draw");
 
         canvasStrokeCap(canvas);
 

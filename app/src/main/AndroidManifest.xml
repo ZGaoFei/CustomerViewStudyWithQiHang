@@ -34,7 +34,8 @@
         <activity android:name=".two_drawing.PaintCanvasTextActivity" />
         <activity android:name=".two_drawing.PaintAndCanvasBezierActivity" />
         <activity android:name=".two_drawing.WaveViewActivity" />
-        <activity android:name=".two_drawing.PaintAndCanvasOtherActivity"></activity>
+        <activity android:name=".two_drawing.PaintAndCanvasOtherActivity" />
+        <activity android:name=".two_drawing.ColorMatrix1Activity"></activity>
     </application>
 
 </manifest>
