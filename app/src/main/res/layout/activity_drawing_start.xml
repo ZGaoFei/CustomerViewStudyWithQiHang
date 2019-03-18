@@ -71,6 +71,12 @@
             android:layout_height="wrap_content"
             android:text="color matrix color filter"/>
 
+        <Button
+            android:id="@+id/bt_paint_canvas11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="x fermode"/>
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

@@ -44,5 +44,7 @@ public class DrawingStartActivity extends AppCompatActivity {
         findViewById(R.id.bt_paint_canvas9).setOnClickListener((view) -> ColorMatrix1Activity.start(mActivity));
 
         findViewById(R.id.bt_paint_canvas10).setOnClickListener((view) -> ColorFilterActivity.start(mActivity));
+
+        findViewById(R.id.bt_paint_canvas11).setOnClickListener((view) -> XfermodeActivity.start(mActivity));
     }
 }

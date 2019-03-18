@@ -36,7 +36,8 @@
         <activity android:name=".two_drawing.WaveViewActivity" />
         <activity android:name=".two_drawing.PaintAndCanvasOtherActivity" />
         <activity android:name=".two_drawing.ColorMatrix1Activity" />
-        <activity android:name=".two_drawing.ColorFilterActivity"></activity>
+        <activity android:name=".two_drawing.ColorFilterActivity" />
+        <activity android:name=".two_drawing.XfermodeActivity"></activity>
     </application>
 
 </manifest>
