@@ -122,3 +122,26 @@
     float[] getArray()// 返回当前ColorMatrix的矩阵数组
 
 
+> setColorFilter方法
+
+    参考：ColorMatrixColorFilterView
+
+    子类：
+    ColorMatrixColorFilter：色彩矩阵颜色过滤器
+        可以直接传入一个ColorMatrix对象，也可以直接传入一个色彩矩阵
+    LightingColorFilter：
+        LightingColorFilter(int mul, int add)
+        mul是乘法multiply的缩写，add是加法的意思
+        计算公式：
+        结果R值 = (r*mul.R+add.R)%255;
+        结果G值 = (g*mul.G+add.G)%255;
+        结果B值 = (b*mul.B+add.B)%255;
+    PorterDuffColorFilter：
+        int srcColor：0xAARRGGBB类型的颜色值。
+        PorterDuff.Mode mode：表示混合模式，枚举值有18个，表示各种图形混合模式
+        1、PorterDuffColorFilter只能实现与一个特定颜色值的合成。
+        2、通过Mode.ADD(饱和度相加)，Mode.DARKEN（变暗），Mode.LIGHTEN（变亮），Mode.MULTIPLY（正片叠底），Mode.OVERLAY（叠加），Mode.SCREEN（滤色）可以实现与指定颜色的复合。
+        3、通过Mode.SRC、Mode.SRC_IN、Mode.SRC_ATOP能够实现setTint()的功能，可以改变纯色图标的颜色。
+
+
+

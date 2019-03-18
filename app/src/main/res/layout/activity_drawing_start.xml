@@ -65,6 +65,12 @@
             android:layout_height="wrap_content"
             android:text="color matrix"/>
 
+        <Button
+            android:id="@+id/bt_paint_canvas10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="color matrix color filter"/>
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

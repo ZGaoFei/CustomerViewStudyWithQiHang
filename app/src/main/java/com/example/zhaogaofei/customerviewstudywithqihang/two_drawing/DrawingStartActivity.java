@@ -2,6 +2,7 @@ package com.example.zhaogaofei.customerviewstudywithqihang.two_drawing;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.ColorFilter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -41,5 +42,7 @@ public class DrawingStartActivity extends AppCompatActivity {
         findViewById(R.id.bt_paint_canvas8).setOnClickListener((view) -> PaintAndCanvasOtherActivity.start(mActivity));
 
         findViewById(R.id.bt_paint_canvas9).setOnClickListener((view) -> ColorMatrix1Activity.start(mActivity));
+
+        findViewById(R.id.bt_paint_canvas10).setOnClickListener((view) -> ColorFilterActivity.start(mActivity));
     }
 }
