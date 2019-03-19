@@ -51,4 +51,10 @@
     PorterDuffXfermode的使用方法参考XfermodeView
     里面对PorterDuff.Mode里面的所有类型均有实现
 
+    XfermodeView：PorterDuffXfermode类的各种模式叠加效果
+    TwitterLogoView：Twitter logo高亮效果
+    CircleBitmapView：实现了圆角图片和倒影的功能
+    EraserView：橡皮擦的功能
+    ScratchCardView：橡皮擦功能具体实现刮刮卡功能
+
 

@@ -37,7 +37,9 @@
         <activity android:name=".two_drawing.PaintAndCanvasOtherActivity" />
         <activity android:name=".two_drawing.ColorMatrix1Activity" />
         <activity android:name=".two_drawing.ColorFilterActivity" />
-        <activity android:name=".two_drawing.XfermodeActivity"></activity>
+        <activity android:name=".two_drawing.XfermodeActivity" />
+        <activity android:name=".two_drawing.TwitterActivity" />
+        <activity android:name=".two_drawing.EraserActivity"></activity>
     </application>
 
 </manifest>

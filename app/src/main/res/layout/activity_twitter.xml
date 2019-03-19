@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc"
+    android:orientation="vertical"
+    tools:context=".two_drawing.TwitterActivity">
+
+    <com.example.zhaogaofei.customerviewstudywithqihang.two_drawing.customer.TwitterLogoView
+        android:layout_width="150dp"
+        android:layout_height="200dp" />
+
+    <com.example.zhaogaofei.customerviewstudywithqihang.two_drawing.customer.CircleBitmapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
