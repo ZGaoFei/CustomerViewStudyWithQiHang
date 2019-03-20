@@ -56,5 +56,38 @@
     CircleBitmapView：实现了圆角图片和倒影的功能
     EraserView：橡皮擦的功能
     ScratchCardView：橡皮擦功能具体实现刮刮卡功能
+    TextWaveView：文字波浪效果
+    HeartMapView：心电图效果
+    BlueWaveView：不规则波浪效果
+
+> Mode 类型划分
+    // 清空 src
+    Mode.CLEAR
+
+    // 突出dst，饱和度由src提供
+    Mode.DST
+    Mode.DST_OVER
+    Mode.DST_OUT
+    Mode.DST_IN
+    Mode.DST_ATOP
+
+    // 突出src，饱和度由dst提供
+    Mode.SRC
+    Mode.SRC_OVER
+    Mode.SRC_IN
+    Mode.SRC_OUT
+    Mode.SRC_ATOP
+
+    // 去反
+    Mode.XOR
+
+    // 叠加效果，重复区域有叠加后的特效
+    Mode.ADD
+    Mode.DARKEN
+    Mode.LIGHTEN
+    Mode.MULTIPLY
+    Mode.SCREEN
+    Mode.OVERLAY
+
 
 

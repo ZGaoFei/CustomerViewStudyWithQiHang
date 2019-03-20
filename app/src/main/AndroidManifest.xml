@@ -39,7 +39,8 @@
         <activity android:name=".two_drawing.ColorFilterActivity" />
         <activity android:name=".two_drawing.XfermodeActivity" />
         <activity android:name=".two_drawing.TwitterActivity" />
-        <activity android:name=".two_drawing.EraserActivity"></activity>
+        <activity android:name=".two_drawing.EraserActivity" />
+        <activity android:name=".two_drawing.PorterDuffDstModeActivity"></activity>
     </application>
 
 </manifest>
