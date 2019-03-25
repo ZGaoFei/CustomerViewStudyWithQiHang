@@ -52,5 +52,7 @@ public class DrawingStartActivity extends AppCompatActivity {
         findViewById(R.id.bt_paint_canvas13).setOnClickListener((view) -> EraserActivity.start(mActivity));
 
         findViewById(R.id.bt_paint_canvas14).setOnClickListener((view) -> PorterDuffDstModeActivity.start(mActivity));
+
+        findViewById(R.id.bt_paint_canvas15).setOnClickListener((view) -> RedPointActivity.start(mActivity));
     }
 }

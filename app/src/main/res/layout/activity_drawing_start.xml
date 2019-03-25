@@ -95,6 +95,12 @@
             android:layout_height="wrap_content"
             android:text="Porter Duff Dst Mode"/>
 
+        <Button
+            android:id="@+id/bt_paint_canvas15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Red point view"/>
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
