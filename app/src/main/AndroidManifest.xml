@@ -41,7 +41,8 @@
         <activity android:name=".two_drawing.TwitterActivity" />
         <activity android:name=".two_drawing.EraserActivity" />
         <activity android:name=".two_drawing.PorterDuffDstModeActivity" />
-        <activity android:name=".two_drawing.RedPointActivity"></activity>
+        <activity android:name=".two_drawing.RedPointActivity" />
+        <activity android:name=".two_drawing.ShadowsActivity"></activity>
     </application>
 
 </manifest>

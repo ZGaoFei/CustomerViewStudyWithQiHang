@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".two_drawing.ShadowsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_layer_images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bt_layer_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layer_shape"
+            android:padding="10dp"
+            android:text="hello world" />
+
+        <Button
+            android:id="@+id/bt_layer_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layer_selector"
+            android:padding="10dp"
+            android:text="hello world" />
+
+        <Button
+            android:id="@+id/bt_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_root"
+            android:padding="10dp"
+            android:text="hello world" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_add_radius"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="radius  +5" />
+
+            <Button
+                android:id="@+id/bt_add_dx"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="dx  +5" />
+
+            <Button
+                android:id="@+id/bt_add_dy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="dy  +5" />
+
+            <Button
+                android:id="@+id/bt_reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="reset" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_show_shadow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="show shadow" />
+
+            <Button
+                android:id="@+id/bt_clear_shadow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="clear shadow" />
+
+        </LinearLayout>
+
+        <com.example.zhaogaofei.customerviewstudywithqihang.two_drawing.customer.ShadowLayerView
+            android:id="@+id/shadow_layer_view"
+            android:layout_width="match_parent"
+            android:layout_height="400dp" />
+
+        <TextView
+            android:id="@+id/tv_shadow0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="测试text view如何代码设置阴影"/>
+
+        <TextView
+            android:id="@+id/tv_shadow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowRadius="3"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowColor="#888888"
+            android:text="测试text view如何XML设置阴影"/>
+
+        <Button
+            android:id="@+id/bt_shadow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowRadius="3"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowColor="#888888"
+            android:text="测试button如何设置阴影"/>
+
+        <EditText
+            android:id="@+id/et_shadow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowRadius="3"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowColor="#888888"
+            android:text="测试edit text如何设置阴影"/>
+
+        <TextView
+            android:id="@+id/tv_blur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="========测试发光效果========"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_blur_normal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="blur normal" />
+
+            <Button
+                android:id="@+id/bt_blur_solid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="blur solid" />
+
+            <Button
+                android:id="@+id/bt_blur_inner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="blur inner" />
+
+            <Button
+                android:id="@+id/bt_blur_outer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="blur outer" />
+
+        </LinearLayout>
+
+        <com.example.zhaogaofei.customerviewstudywithqihang.two_drawing.customer.BlurMaskFilterView
+            android:id="@+id/blur_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

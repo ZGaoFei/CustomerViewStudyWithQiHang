@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@mipmap/blog1_1"/>
+    <item android:drawable="@mipmap/blog1_2"/>
+    <item android:drawable="@mipmap/blog1_3"/>
+
+</layer-list>

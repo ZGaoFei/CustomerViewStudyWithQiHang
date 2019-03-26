@@ -101,6 +101,12 @@
             android:layout_height="wrap_content"
             android:text="Red point view"/>
 
+        <Button
+            android:id="@+id/bt_paint_canvas16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="layer list"/>
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
