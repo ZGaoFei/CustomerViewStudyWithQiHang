@@ -107,6 +107,12 @@
             android:layout_height="wrap_content"
             android:text="layer list"/>
 
+        <Button
+            android:id="@+id/bt_paint_canvas17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="bitmap shadow"/>
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
