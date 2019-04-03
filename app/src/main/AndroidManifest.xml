@@ -45,7 +45,9 @@
         <activity android:name=".two_drawing.ShadowsActivity" />
         <activity android:name=".two_drawing.BitmapShadowActivity" />
         <activity android:name=".two_drawing.BitmapShaderActivity" />
-        <activity android:name=".two_drawing.AvatarActivity"></activity>
+        <activity android:name=".two_drawing.AvatarActivity" />
+        <activity android:name=".two_drawing.LinearGradientActivity" />
+        <activity android:name=".two_drawing.RadialGradientActivity"></activity>
     </application>
 
 </manifest>

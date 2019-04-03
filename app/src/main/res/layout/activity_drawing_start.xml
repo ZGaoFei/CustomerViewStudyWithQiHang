@@ -125,6 +125,18 @@
             android:layout_height="wrap_content"
             android:text="bitmap avatar"/>
 
+        <Button
+            android:id="@+id/bt_paint_canvas20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="linear gradient"/>
+
+        <Button
+            android:id="@+id/bt_paint_canvas21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="radial gradient"/>
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
