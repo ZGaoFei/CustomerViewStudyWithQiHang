@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BitmapShadowView">
+        <attr name="src" format="reference" />
+        <attr name="shadowDx" format="integer" />
+        <attr name="shadowDy" format="integer" />
+        <attr name="shadowColor" format="color" />
+        <attr name="shadowRadius" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="AvatarView">
+        <attr name="avatarSrc" format="reference" />
+        <attr name="format" format="enum">
+            <enum name="circle" value="0" />
+            <enum name="recTangle" value="1" />
+        </attr>
+        <attr name="radius" format="float" />
+    </declare-styleable>
+
+</resources>

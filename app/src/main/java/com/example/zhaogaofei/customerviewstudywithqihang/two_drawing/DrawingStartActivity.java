@@ -58,5 +58,9 @@ public class DrawingStartActivity extends AppCompatActivity {
         findViewById(R.id.bt_paint_canvas16).setOnClickListener((view) -> ShadowsActivity.start(mActivity));
 
         findViewById(R.id.bt_paint_canvas17).setOnClickListener((view) -> BitmapShadowActivity.start(mActivity));
+
+        findViewById(R.id.bt_paint_canvas18).setOnClickListener((view) -> BitmapShaderActivity.start(mActivity));
+
+        findViewById(R.id.bt_paint_canvas19).setOnClickListener((view) -> AvatarActivity.start(mActivity));
     }
 }

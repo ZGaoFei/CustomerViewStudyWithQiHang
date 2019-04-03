@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".two_drawing.AvatarActivity">
+
+    <com.example.zhaogaofei.customerviewstudywithqihang.two_drawing.customer.AvatarView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:avatarSrc="@mipmap/timo"/>
+
+    <com.example.zhaogaofei.customerviewstudywithqihang.two_drawing.customer.AvatarView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:format="circle"
+        app:avatarSrc="@mipmap/timo" />
+
+    <com.example.zhaogaofei.customerviewstudywithqihang.two_drawing.customer.AvatarView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:format="recTangle"
+        app:avatarSrc="@mipmap/timo" />
+
+    <com.example.zhaogaofei.customerviewstudywithqihang.two_drawing.customer.AvatarView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:format="recTangle"
+        app:radius="20"
+        app:avatarSrc="@mipmap/timo" />
+
+    <com.example.zhaogaofei.customerviewstudywithqihang.two_drawing.customer.AvatarView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:format="recTangle"
+        app:radius="40"
+        app:avatarSrc="@mipmap/timo" />
+
+</LinearLayout>

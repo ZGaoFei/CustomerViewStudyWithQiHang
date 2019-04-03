@@ -43,7 +43,9 @@
         <activity android:name=".two_drawing.PorterDuffDstModeActivity" />
         <activity android:name=".two_drawing.RedPointActivity" />
         <activity android:name=".two_drawing.ShadowsActivity" />
-        <activity android:name=".two_drawing.BitmapShadowActivity"></activity>
+        <activity android:name=".two_drawing.BitmapShadowActivity" />
+        <activity android:name=".two_drawing.BitmapShaderActivity" />
+        <activity android:name=".two_drawing.AvatarActivity"></activity>
     </application>
 
 </manifest>
