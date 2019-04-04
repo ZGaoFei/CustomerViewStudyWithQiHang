@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.zhaogaofei.customerviewstudywithqihang.one_animator.AnimatorStartActivity;
+import com.example.zhaogaofei.customerviewstudywithqihang.three_view.ViewStartActivity;
 import com.example.zhaogaofei.customerviewstudywithqihang.two_drawing.DrawingStartActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,11 +29,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.bt_three).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+        findViewById(R.id.bt_three).setOnClickListener(v -> ViewStartActivity.start(MainActivity.this));
     }
 }

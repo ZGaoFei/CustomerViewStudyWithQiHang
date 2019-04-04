@@ -47,7 +47,9 @@
         <activity android:name=".two_drawing.BitmapShaderActivity" />
         <activity android:name=".two_drawing.AvatarActivity" />
         <activity android:name=".two_drawing.LinearGradientActivity" />
-        <activity android:name=".two_drawing.RadialGradientActivity"></activity>
+        <activity android:name=".two_drawing.RadialGradientActivity" />
+        <activity android:name=".three_view.ViewStartActivity" />
+        <activity android:name=".three_view.MyLinearLayoutActivity"></activity>
     </application>
 
 </manifest>
