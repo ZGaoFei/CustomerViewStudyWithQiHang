@@ -24,5 +24,7 @@ public class ViewStartActivity extends AppCompatActivity {
 
     private void initView() {
         findViewById(R.id.bt_view_01).setOnClickListener((v -> MyLinearLayoutActivity.start(context)));
+
+        findViewById(R.id.bt_view_02).setOnClickListener((v -> FlowLayoutActivity.start(context)));
     }
 }

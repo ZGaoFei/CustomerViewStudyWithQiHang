@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".three_view.FlowLayoutActivity">
+
+    <com.example.zhaogaofei.customerviewstudywithqihang.three_view.customerview.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/text_bg"
+            android:text="one"/>
+
+        <TextView
+            style="@style/text_bg"
+            android:text="one two three"/>
+
+        <TextView
+            style="@style/text_bg"
+            android:text="one two three four"/>
+
+        <TextView
+            style="@style/text_bg"
+            android:text="one two three four" />
+
+        <TextView
+            style="@style/text_bg"
+            android:text="one two" />
+
+        <TextView
+            style="@style/text_bg"
+            android:text="one two three four five" />
+
+        <TextView
+            style="@style/text_bg"
+            android:text="one two three" />
+
+        <TextView
+            style="@style/text_bg"
+            android:text="one two three" />
+
+        <TextView
+            style="@style/text_bg"
+            android:text="one" />
+
+        <TextView
+            style="@style/text_bg"
+            android:text="one two" />
+
+        <TextView
+            style="@style/text_bg"
+            android:text="one two three four five" />
+
+        <TextView
+            style="@style/text_bg"
+            android:text="one" />
+
+    </com.example.zhaogaofei.customerviewstudywithqihang.three_view.customerview.FlowLayout>
+
+</android.support.constraint.ConstraintLayout>

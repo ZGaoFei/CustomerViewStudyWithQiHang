@@ -49,7 +49,8 @@
         <activity android:name=".two_drawing.LinearGradientActivity" />
         <activity android:name=".two_drawing.RadialGradientActivity" />
         <activity android:name=".three_view.ViewStartActivity" />
-        <activity android:name=".three_view.MyLinearLayoutActivity"></activity>
+        <activity android:name=".three_view.MyLinearLayoutActivity" />
+        <activity android:name=".three_view.FlowLayoutActivity"></activity>
     </application>
 
 </manifest>
