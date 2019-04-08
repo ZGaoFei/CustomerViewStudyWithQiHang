@@ -28,8 +28,10 @@ public class FlowLayout extends ViewGroup {
         int widthMode = MeasureSpec.getMode(widthMeasureSpec);
         int heightMode = MeasureSpec.getMode(heightMeasureSpec);
 
+        // 行宽和行高
         int lineWidth = 0;
         int lineHeight = 0;
+        // 布局的宽和高
         int width = 0;
         int height = 0;
 

@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <declare-styleable name="AllStyle">
+        <attr name="a" format="dimension"/> <!--从dimension.xml里引用过来的内容.注意,这里如果是dp那就会做像素转换-->
+        <attr name="b" format="integer"/> <!--int类型-->
+        <attr name="c" format="float"/> <!--float类型-->
+        <attr name="d">                 <!--枚举类型-->
+            <enum name="da" value="111"/> <!--这里的枚举值必须为int-->
+            <enum name="db" value="222"/>
+            <enum name="dc" value="333"/>
+        </attr>
+        <attr name="e" format="reference"/> <!--从string.xml、drawable.xml、color.xml等某一资源Id引用过来的值-->
+        <attr name="f" format="color"/> <!--color类型-->
+        <attr name="g" format="fraction"/> <!--百分数-->
+        <attr name="h" format="boolean"/> <!--bool类型-->
+        <attr name="i">                     <!--位或运算-->
+            <flag name="ia" value="10"/>
+            <flag name="ib" value="20"/>
+            <flag name="ic" value="30"/>
+        </attr>
+        <attr name="j" format="string"/> <!--string类型-->
+    </declare-styleable>
+
     <declare-styleable name="BitmapShadowView">
         <attr name="src" format="reference" />
         <attr name="shadowDx" format="integer" />
@@ -16,6 +37,12 @@
             <enum name="recTangle" value="1" />
         </attr>
         <attr name="radius" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="WaterFallLayout">
+        <attr name="columns" format="integer" />
+        <attr name="hSpace" format="dimension" />
+        <attr name="vSpace" format="dimension" />
     </declare-styleable>
 
 </resources>

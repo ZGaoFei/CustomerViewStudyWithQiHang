@@ -26,5 +26,7 @@ public class ViewStartActivity extends AppCompatActivity {
         findViewById(R.id.bt_view_01).setOnClickListener((v -> MyLinearLayoutActivity.start(context)));
 
         findViewById(R.id.bt_view_02).setOnClickListener((v -> FlowLayoutActivity.start(context)));
+
+        findViewById(R.id.bt_view_03).setOnClickListener((v -> WaterFallLayoutActivity.start(context)));
     }
 }
